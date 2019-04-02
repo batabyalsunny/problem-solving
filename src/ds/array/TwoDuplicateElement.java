@@ -13,7 +13,7 @@ public class TwoDuplicateElement {
 			int key = arr[Math.abs(arr[i])];
 
 			if (0 > key)
-				System.out.println(-key);
+				System.out.println(Math.abs(arr[i]));
 			else
 				arr[Math.abs(arr[i])] = -key;
 		}
