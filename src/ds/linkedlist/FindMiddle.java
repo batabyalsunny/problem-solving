@@ -1,13 +1,6 @@
-/**
- * 
- */
 package ds.linkedlist;
 
-/**
- * @author sunnyb
- *
- */
-public class NthNodeFromEnd {
+public class FindMiddle {
 
 	Node start;
 
@@ -40,14 +33,9 @@ public class NthNodeFromEnd {
 		}
 	}
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 
-		NthNodeFromEnd ll = new NthNodeFromEnd();
-
-		int n = 3, count = 0;
+		FindMiddle ll = new FindMiddle();
 
 		ll.push(10);
 		ll.push(12);
@@ -68,14 +56,9 @@ public class NthNodeFromEnd {
 		Node p = ll.start;
 		Node q = ll.start;
 
-		while (count < n) {
-			q = q.next;
-			count++;
-		}
-
-		while (null != q) {
+		while (null != q.next) {
 			p = p.next;
-			q = q.next;
+			q = q.next.next;
 		}
 
 		System.out.println(p.data);
