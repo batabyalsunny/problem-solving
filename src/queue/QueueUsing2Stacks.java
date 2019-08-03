@@ -51,6 +51,18 @@ public class QueueUsing2Stacks<E> {
 		}
 	}
 
+	public E dequeue2() {
+
+		if (stack.size() == 1) {
+			return stack.pop();
+		}
+
+		E data = stack.pop();
+		E ret = dequeue2();
+		stack.push(data);
+		return ret;
+	}
+
 	/**
 	 * @param args
 	 */
