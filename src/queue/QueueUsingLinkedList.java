@@ -60,6 +60,10 @@ public class QueueUsingLinkedList<E> {
 		}
 	}
 
+	public boolean isEmpty() {
+		return (null == front);
+	}
+
 	/**
 	 * @param args
 	 */
