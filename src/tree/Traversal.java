@@ -3,6 +3,9 @@
  */
 package tree;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author sunnyb
  *
@@ -10,6 +13,8 @@ package tree;
 public class Traversal {
 
 	Node root;
+
+	List<Integer> order = new ArrayList<>();
 
 	public void inorder(Node root) {
 
@@ -19,6 +24,7 @@ public class Traversal {
 
 		inorder(root.left);
 		System.out.println(root.data);
+		order.add(root.data);
 		inorder(root.right);
 	}
 
@@ -29,6 +35,7 @@ public class Traversal {
 		}
 
 		System.out.println(root.data);
+		order.add(root.data);
 		preorder(root.left);
 		preorder(root.right);
 	}
@@ -42,6 +49,7 @@ public class Traversal {
 		postorder(root.left);
 		postorder(root.right);
 		System.out.println(root.data);
+		order.add(root.data);
 	}
 
 	/**
