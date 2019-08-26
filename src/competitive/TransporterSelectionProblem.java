@@ -109,7 +109,7 @@ public class TransporterSelectionProblem {
 
 		TransporterSelectionProblem tsp = new TransporterSelectionProblem();
 
-		int productWeights[] = { 50, 40, 40, 30, 20, 20 };
+		int productWeights[] = { 21, 19, 16, 13, 9, 8, 7, 5, 3, 2 };
 		int transporterCapacities[] = { 20, 12, 5 };
 
 		Map<Integer, Map<Integer, Integer>> transporters = tsp.findTransporters(productWeights, transporterCapacities);
