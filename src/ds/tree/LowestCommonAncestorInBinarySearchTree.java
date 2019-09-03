@@ -1,7 +1,7 @@
 /**
  * 
  */
-package tree;
+package ds.tree;
 
 import competitive.Node;
 

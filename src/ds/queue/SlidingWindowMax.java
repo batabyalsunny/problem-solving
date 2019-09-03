@@ -1,7 +1,7 @@
 /**
  * 
  */
-package queue;
+package ds.queue;
 
 import java.util.Deque;
 import java.util.LinkedList;

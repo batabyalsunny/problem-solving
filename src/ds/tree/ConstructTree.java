@@ -1,7 +1,7 @@
 /**
  * 
  */
-package tree;
+package ds.tree;
 
 import java.util.HashMap;
 import java.util.Map;

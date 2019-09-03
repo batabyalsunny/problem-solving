@@ -1,7 +1,7 @@
 /**
  * 
  */
-package queue;
+package ds.queue;
 
 /**
  * @author sunnyb

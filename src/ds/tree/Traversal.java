@@ -1,7 +1,7 @@
 /**
  * 
  */
-package tree;
+package ds.tree;
 
 import java.util.ArrayList;
 import java.util.List;

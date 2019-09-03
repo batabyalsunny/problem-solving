@@ -1,6 +1,6 @@
 package ds.stack;
 
-import queue.QueueUsingLinkedList;
+import ds.queue.QueueUsingLinkedList;
 
 public class StackUsing2Queues<E> {
 
