@@ -1,32 +1,34 @@
+package competitive;
+
 import java.util.Scanner;
 
 public class SplitStringInBalanced {
-    
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
-        String s = sc.nextLine();
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 
-        System.out.println(balancedStringSplit(s));
-    }
+		String s = sc.nextLine();
 
-    public static int balancedStringSplit(String s) {
-        int count = 0, splitCount = 0;
+		System.out.println(balancedStringSplit(s));
+	}
 
-        for (int i = 0; i < s.length(); i++) {
-            char currentChar = s.charAt(i);
+	public static int balancedStringSplit(String s) {
+		int count = 0, splitCount = 0;
 
-            if (currentChar == 'R') {
-                count++;
-            } else {
-                count--;
-            }
+		for (int i = 0; i < s.length(); i++) {
+			char currentChar = s.charAt(i);
 
-            if (count == 0) {
-                splitCount++;
-            }
-        }
-        
-        return splitCount;
-    }
+			if (currentChar == 'R') {
+				count++;
+			} else {
+				count--;
+			}
+
+			if (count == 0) {
+				splitCount++;
+			}
+		}
+
+		return splitCount;
+	}
 }

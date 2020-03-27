@@ -51,6 +51,22 @@ public class DetectLoopInLL {
 			}
 		}
 
-	}
+		if (p == q) {
 
+			p = llist.head;
+
+			while (p.next != q.next) {
+				p = p.next;
+				q = q.next;
+			}
+
+			q.next = null;
+		}
+
+		Node temp = llist.head;
+		while (temp != null) {
+			System.out.println(temp.data);
+			temp = temp.next;
+		}
+	}
 }

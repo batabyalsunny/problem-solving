@@ -16,13 +16,17 @@ public class StackUsing2Queues<E> {
 
 	public void push(E item) {
 
-		secondaryQueue.enqueue(item);
-
 		while (!primaryQueue.isEmpty()) {
 			secondaryQueue.enqueue(primaryQueue.dequeue());
 		}
 
-		swapQueue();
+		primaryQueue.enqueue(item);
+
+		while (!secondaryQueue.isEmpty()) {
+			primaryQueue.enqueue(secondaryQueue.dequeue());
+		}
+
+//		swapQueue();
 	}
 
 	public E pop() {
@@ -40,6 +44,7 @@ public class StackUsing2Queues<E> {
 		stack.push(5);
 
 		stack.primaryQueue.printQueue();
+		System.out.println("pop");
 
 		stack.pop();
 		stack.pop();
