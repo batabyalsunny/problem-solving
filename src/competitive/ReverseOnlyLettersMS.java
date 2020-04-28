@@ -17,8 +17,8 @@ public class ReverseOnlyLettersMS {
 
 //		Class<?> c = Class.forName("ReverseOnlyLettersMS");
 
-		Class<?> caller = Reflection.getCallerClass();
-		ClassLoader cl = ClassLoader.getSystemClassLoader();
+//		Class<?> caller = Reflection.getCallerClass();
+//		ClassLoader cl = ClassLoader.getSystemClassLoader();
 
 		while (i < j) {
 
